@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!Breaking News>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
