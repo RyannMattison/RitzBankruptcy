@@ -39,7 +39,7 @@
         <p>We deeply appreciate the loyalty and support of our customers over the years and will provide further updates as the process unfolds.</p>
         <div class="footer">
             <strong>Ritz Crackers Team</strong>
-            <p>()</p>
+            <p></p>
         </div>
     </div>
 </body>
