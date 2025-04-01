@@ -1,48 +1,101 @@
-<!Breaking News>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritz Crackers Announcement</title>
+    <title>Ritz Bankruptcy Notice</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             text-align: center;
-            margin: 50px;
-            background-color: #f8f8f8;
+            padding: 20px;
         }
         .container {
-            max-width: 600px;
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
             margin: auto;
         }
-        img {
-            width: 100%;
-            border-radius: 10px;
+        h1 {
+            color: red;
+        }
+        .countdown {
+            font-size: 24px;
+            font-weight: bold;
+            color: darkred;
         }
         .footer {
-            margin-top: 20px;
-            font-size: 14px;
+            font-size: 12px;
             color: gray;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Ritz-Cracker.jpg/800px-Ritz-Cracker.jpg" alt="Ritz Crackers">
-        <h1>Important Corporate Announcement</h1>
-        <p>It is with deep regret that we must share difficult news regarding the future of Ritz Crackers. After over a century of serving households across the nation, we are faced with insurmountable financial challenges that have led us to make the difficult decision to file for bankruptcy.</p>
-        <p>Rising production costs, supply chain disruptions, and shifting consumer preferences have placed unprecedented strain on our operations. Despite our best efforts to adapt, including streamlining production and exploring new product innovations, the economic climate has made it impossible for us to sustain our beloved brand.</p>
-        <p>We deeply appreciate the loyalty and support of our customers over the years and will provide further updates as the process unfolds.</p>
-        <div class="footer">
-            <strong>Ritz Crackers Team</strong>
-            <p></p>
-        </div>
+        <!-- Company Logo -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Ritz-Cracker.png/600px-Ritz-Cracker.png" width="200" alt="Ritz Logo">
+        
+        <!-- Official Header -->
+        <h1>Official Bankruptcy Notice</h1>
+        <p><strong>Ritz Holdings, LLC</strong><br>
+        1234 Snack Lane, Suite 500, New York, NY 10001<br>
+        <strong>Case No: 2025-BK-0421</strong></p>
+
+        <!-- Breaking News Section -->
+        <h3>BREAKING NEWS: Ritz Crackers Files for Bankruptcy</h3>
+        <p>New York (April 1, 2025) – In a shocking turn of events, Ritz Holdings, LLC has filed for Chapter 11 bankruptcy protection, citing unexpected losses in the snack industry. Analysts suggest that increased competition and declining consumer interest in traditional crackers have led to this decision.</p>
+
+        <!-- Countdown Timer -->
+        <p><strong>Time Remaining Until Liquidation:</strong></p>
+        <p class="countdown" id="countdown"></p>
+
+        <!-- Fake Creditor Claim Form -->
+        <h3>Creditor Claim Form</h3>
+        <form>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="amount">Claim Amount ($):</label><br>
+            <input type="number" id="amount" name="amount"><br><br>
+
+            <label for="reason">Reason for Claim:</label><br>
+            <textarea id="reason" name="reason"></textarea><br><br>
+
+            <input type="submit" value="Submit Claim">
+        </form>
+
+        <!-- Downloadable PDF Link -->
+        <p><a href="bankruptcy-filing.pdf" download>Download Official Bankruptcy Notice (PDF)</a></p>
+
+        <!-- Legal Disclaimer -->
+        <p class="footer">This is an official announcement from Ritz Holdings, LLC. All creditor claims must be filed before May 1, 2025.</p>
     </div>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        function countdown() {
+            const liquidationDate = new Date("May 1, 2025").getTime();
+            const now = new Date().getTime();
+            const timeLeft = liquidationDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            document.getElementById("countdown").innerHTML = days + " days remaining";
+        }
+        setInterval(countdown, 1000);
+    </script>
+
+    <!-- Fake Restricted Access Pop-up -->
+    <script>
+        alert("⚠️ Restricted Access: This page is for authorized creditors only.");
+    </script>
+
 </body>
 </html>
+
 
 
